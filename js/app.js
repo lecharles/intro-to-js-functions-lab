@@ -166,3 +166,28 @@ console.log('Exercise 6 Result:', maxOfThree(-7, -7, -7));
 console.log('Exercise 6 Result:', maxOfThree(-0, 0, 1));
 console.log('Exercise 6 Result:', maxOfThree(3, 9, 6));
 console.log('Exercise 6 Result:', maxOfThree(-5, -2, -8));
+
+/*
+Exercise 7: calculateTip()
+
+Create a function called calculateTip. It should take two arguments: 
+the bill amount and the tip percentage (as a whole number). 
+The function should return the amount of the tip.
+
+Example: calculateTip(50, 20) should return 10.
+
+Complete the exercise in the space below:
+*/
+
+// Function to calculate tip amount
+const calculateTip = (billAmount, tipPercentage) => {
+    // Convert tip percentage to decimal by dividing that amount by 100
+    // Then multiply by bill amount to get the tip amount
+    return billAmount * (tipPercentage / 100);
+}
+
+console.log('Exercise 7 Result:', `The exact amount of the tip is ${calculateTip(50, 20)}`);
+console.log('Exercise 7 Result:', `The exact amount of the tip is ${calculateTip(80, 15)}`);
+console.log('Exercise 7 Result:', `The exact amount of the tip is ${calculateTip(100, 18)}`);
+console.log('Exercise 7 Result:', `The exact amount of the tip is ${calculateTip(45.50, 10)}`);
+console.log('Exercise 7 Result:', `The exact amount of the tip is ${calculateTip(60, 25)}`);
