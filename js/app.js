@@ -131,3 +131,38 @@ console.log('Exercise 5 Result:', greetUser("Carlos", "morning"));
 console.log('Exercise 5 Result:', greetUser("Avisa", "afternoon"));
 console.log('Exercise 5 Result:', greetUser("Billie", "evening"));
 console.log('Exercise 5 Result:', greetUser());
+
+/*
+Exercise 6: maxOfThree()
+
+Define a function, maxOfThree. It should accept three numbers 
+and return the largest among them.
+
+Example: maxOfThree(17, 4, 9) should return 17.
+
+Complete the exercise in the space below:
+*/
+
+// Function to find the largest of three numbers
+const maxOfThree = (n1, n2, n3) => {
+    // Compare n1 with n2 and n3
+    if (n1 >= n2 && n1 >= n3) {
+        return n1;  // n1 is largest
+    }
+    // Compare n2 with n3
+    else if (n2 >= n3) {
+        return n2;  // n2 is largest
+    }
+    // Otherwise n3 must be largest
+    else {
+        return n3;  // n3 is largest
+    }
+}
+
+console.log('Exercise 6 Result:', maxOfThree(5, 10, 8));
+console.log('Exercise 6 Result:', maxOfThree(15, 12, 20));
+console.log('Exercise 6 Result:', maxOfThree(7, 7, 7));
+console.log('Exercise 6 Result:', maxOfThree(-7, -7, -7));
+console.log('Exercise 6 Result:', maxOfThree(-0, 0, 1));
+console.log('Exercise 6 Result:', maxOfThree(3, 9, 6));
+console.log('Exercise 6 Result:', maxOfThree(-5, -2, -8));
