@@ -226,3 +226,43 @@ console.log('Exercise 8 Result:', `The current temperature is ${convertTemperatu
 console.log('Exercise 8 Result:', `The current temperature is ${convertTemperature(89.6, "F")} degrees`);
 console.log('Exercise 8 Result:', `The current temperature is ${convertTemperature(0, "c")} degrees`);
 console.log('Exercise 8 Result:', `The current temperature is ${convertTemperature(100, "F")} degrees`);
+
+/*
+Exercise 9: basicCalculator()
+
+Create a function named basicCalculator. 
+It should take three arguments: two numbers and a string representing 
+an operation ('add', 'subtract', 'multiply', 'divide'). 
+Perform the provided operation on the two numbers. 
+In operations where the order of numbers is important, 
+treat the first parameter as the first operand and the 
+second parameter as the second operand.
+
+Example: basicCalculator(10, 5, 'subtract') should return 5.
+
+Complete the exercise in the space below:
+*/
+
+// Function to perform basic arithmetic operations
+const basicCalculator = (n1, n2, op) => {
+    // Check which operation to perform
+    if (op === 'add') {
+        return n1 + n2;
+    } else if (op === 'sub') {
+        return n1 - n2;
+    } else if (op === 'mul') {
+        return n1 * n2;
+    } else if (op === 'div') {
+        return n1 / n2;
+    }
+}
+
+console.log('Exercise 9 Result:', basicCalculator(10, 5, "sub"));
+console.log('Exercise 9 Result:', basicCalculator(7, 3, "add"));
+console.log('Exercise 9 Result:', basicCalculator(4, 6, "mul"));
+console.log('Exercise 9 Result:', basicCalculator(20, 4, "div"));
+console.log('Exercise 9 Result:', basicCalculator(15, 0, "div"));
+console.log('Exercise 9 Result:', basicCalculator(1, 1000000, "div"));
+console.log('Exercise 9 Result:', basicCalculator(9, 3, "sub"));
+console.log('Exercise 9 Result:', basicCalculator(8, 2, "mul"));
+console.log('Exercise 9 Result:', basicCalculator(14, 7, "add"));
