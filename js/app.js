@@ -191,3 +191,38 @@ console.log('Exercise 7 Result:', `The exact amount of the tip is ${calculateTip
 console.log('Exercise 7 Result:', `The exact amount of the tip is ${calculateTip(100, 18)}`);
 console.log('Exercise 7 Result:', `The exact amount of the tip is ${calculateTip(45.50, 10)}`);
 console.log('Exercise 7 Result:', `The exact amount of the tip is ${calculateTip(60, 25)}`);
+
+/*
+Exercise 8: convertTemperature()
+
+Write a function named convertTemperature. 
+It takes two arguments: a temperature and a string representing the 
+scale ('C' for Celsius, 'F' for Fahrenheit). 
+Convert the temperature to the other scale.
+
+Example: convertTemperature(32, 'C') should return 89.6 (Fahrenheit).
+Example: convertTemperature(32, 'F') should return 0 (Celsius).
+
+Complete the exercise in the space below:
+*/
+
+// Function to convert temperature between Celsius and Fahrenheit
+const convertTemperature = (temperature, scale) => {
+    // If scale is Celsius, convert to Fahrenheit
+    if (scale === 'C' || scale === 'c') {
+        // Formula: F = (C × 9/5) + 32
+        return (temperature * 9 / 5) + 32;
+    }
+    // If scale is Fahrenheit, convert to Celsius
+    else if (scale === 'F' || scale === 'f') {
+        // Formula: C = (F - 32) × 5/9
+        return (temperature - 32) * 5 / 9;
+    }
+}
+
+// console.log('Exercise 8 Result:', `The current temperature is ${convertTemperature(32, "C")} in ${scale} degrees`);
+
+console.log('Exercise 8 Result:', `The current temperature is ${convertTemperature(32, "C")} degrees`);
+console.log('Exercise 8 Result:', `The current temperature is ${convertTemperature(89.6, "F")} degrees`);
+console.log('Exercise 8 Result:', `The current temperature is ${convertTemperature(0, "c")} degrees`);
+console.log('Exercise 8 Result:', `The current temperature is ${convertTemperature(100, "F")} degrees`);
