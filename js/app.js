@@ -109,3 +109,25 @@ console.log('Exercise 4 Result:', generateEmail("janedoe", "yahoo.com"));
 console.log('Exercise 4 Result:', generateEmail("user123", "example.org"));
 console.log('Exercise 4 Result:', generateEmail("testuser", "testdomain.net"));
 
+/*
+Exercise 5: greetUser()
+
+Define a function called greetUser. It should take a name and a 
+time of day (morning, afternoon, evening) and return a personalized 
+greeting.
+
+Example: greetUser('Sam', 'morning') should return "Good morning, Sam!"
+
+Complete the exercise in the space below:
+*/
+
+// Function to create a personalized greeting
+const greetUser = (name = "my friend", timeOfDay = "heavens") => {
+    // Combine "Good", the time of day, name, and exclamation mark
+    return `Good ${timeOfDay}, ${name}!`;
+}
+
+console.log('Exercise 5 Result:', greetUser("Carlos", "morning")); 
+console.log('Exercise 5 Result:', greetUser("Avisa", "afternoon"));
+console.log('Exercise 5 Result:', greetUser("Billie", "evening"));
+console.log('Exercise 5 Result:', greetUser());
